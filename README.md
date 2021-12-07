@@ -45,15 +45,15 @@ This will:
 
 1. Start Metro by moving into the react-native project directory (`WorkoutApp`).
 
-```zsh
-% cd WorkoutApp
-% npx react-native start
+```sh
+$ cd WorkoutApp
+$ npx react-native start
 ```
 
-2. Start the iOS simulator in another terminal session.
+1. Start the iOS simulator in another terminal session.
 
-```zsh
-% npx react-native run-ios
+```sh
+$ npx react-native run-ios
 ```
 
 3. Start coding!
