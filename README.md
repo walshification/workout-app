@@ -10,8 +10,8 @@ The easiest way to install Xcode is through the [Mac App Store](https://itunes.a
 
 I'm not going to tell you how to manage your Node installation, but I use nodenv. If you also use nodenv and want to install the version of Node I used, just run:
 
-```zsh
-% nodenv install $(cat .node-version)
+```sh
+nodenv install $(cat .node-version)
 ```
 
 ### iOS Simulator of the Appropriate Version
@@ -22,17 +22,17 @@ The version you install might differ based on your phone/needs. This must be ins
 
 Ruby is needed for CocoaPods, a dependency manager for Swift and Objective-C Cocoa projects. As with Node and nodenv, I use rbenv to manage Ruby installations. Then you'll want Bundler to manage the Ruby dependency. The easiest way from this project is:
 
-```zsh
-% rbenv install $(cat .ruby-version)
-% gem install bundler
+```sh
+rbenv install $(cat .ruby-version)
+gem install bundler
 ```
 
 ### Local Dependencies
 
 Having taken care of the above, run the following command to install the remaining dev dependencies:
 
-```zsh
-% make deps
+```sh
+make deps
 ```
 
 This will:
@@ -46,14 +46,14 @@ This will:
 1. Start Metro by moving into the react-native project directory (`WorkoutApp`).
 
 ```sh
-$ cd WorkoutApp
-$ npx react-native start
+cd WorkoutApp
+npx react-native start
 ```
 
 1. Start the iOS simulator in another terminal session.
 
 ```sh
-$ npx react-native run-ios
+npx react-native run-ios
 ```
 
 3. Start coding!
